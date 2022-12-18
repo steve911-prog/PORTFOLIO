@@ -1,0 +1,130 @@
+* {
+  /* * is for all elements */
+  box-sizing: border-top;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+  /* plavniy scroll */
+}
+
+.navbar {
+  background: #131313;
+  height: 80px;
+  display: flex;
+  /* Внутренние div-ы выстраиваются в ряд (вдоль
+     главной оси) колонками одинаковой высоты, 
+     независимо от содержимого*/
+  justify-content: center;
+  /* makes an element stying in the center */
+  align-items: center;
+  /* Свойство align-items задает выравнивание элементов 
+    вдоль поперечной оси. Применяется к родительскому элементу 
+    для flex блоков. */
+  position: sticky;
+  /* CSS position: sticky — создание эффектов пролистывания с использованием липкого позиционирования От автора: липкие элементы преимущественно используются 
+    для удерживания чего-либо, отображаемого на экране 
+    во время прокрутки. */
+  top: 0;
+  z-index: 999;
+  font-size: 1.2em;
+  /* CSS-свойство z-index определяет положение позиционированного 
+    элемента и его дочерних элементов или флекс-элементов по оси z. 
+    Перекрывающие элементы с большим значением z-index будут 
+    накладываться поверх элементов с меньшим z-index.
+ */
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  /* it put all free from element area(margin) in the center, 
+  but puts elements lefts and rights */
+  height: 80px;
+  z-index: 1;
+  width: 100%; 
+  /* :)) this feature made logo standing left, but other - right*/
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+
+#navbarLogo{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844, #ffb199,
+    #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /* These are the vendor-prefixed properties offered by the relevant rendering engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Internet Explorer). Typically they're used to implement new, or 
+    proprietary CSS features, prior to final clarification/definition 
+    by the W3. */
+    display: flex;
+    align-items: center;
+    /* makes elements being in the center fo parent element */
+    /* and it would not work without the line above */
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+
+
+.navbarMenu{
+  display: flex;
+  /* this function made a row from column(list) of elements*/
+  align-items: center;
+  list-style: none;
+
+}
+
+.navbarItem{
+  height: 80px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@100;300;400;500;600&display=swap");
+//THIS Code above imports the google font
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+//These are the variables
+$blue: #29d9d5;
+$black: #111;
+$white: #fff;
+$light-color: #aaa;
+$bg-color: #222;
+$black-bg: rgba(17, 17, 17, 0.7);
+$border: 0.2rem solid $blue;
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+  }
+}
+
+body {
+  background: $black;
+  overflow-x: hidden;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block; //How something looks
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $blue;
+  border: $border;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+  &:hover {
+    background: $blue; //When you touch smth with the mouse
+    color: $black;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  .navbar a {
+    font-size: 1.7rem;
+    color: $light-color;
+    display: inline-block;
+    margin: 0 1rem;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+  .btn {
+    margin-top: 0;
+  }
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bolder;
+
+  i {
+    color: $blue;
+    padding-right: 0.5rem;
+  }
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: $white;
+  cursor: pointer;
+  display: none;
+}
+
+//
+//@at-root
+//@at-root//@at-root
+//@at-root
+//@at-root/@at-root
+//@at-root
+//media queries
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header {
+    // header, thennavbar - how in html
+    .navbar {
+      position: absolute;
+      display: none;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: $bg-color;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

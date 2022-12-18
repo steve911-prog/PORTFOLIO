@@ -1,0 +1,53 @@
+CSS: 
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);                       #changing an image-form
+cursor: pointer;                                                    #changing mouse cursor type
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  box-sizing: border-box;
+  outline: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+position: fixed;
+top: 0;
+left: 0;
+right: 0
+
+
+  &::-webkit-scrollbar-thumb {
+    background: $black;
+  }
+}
+
+align-items: center;
+justify-content: space-between;
+padding: 1.5rem 9%;
+
+font-weight: bolder;
