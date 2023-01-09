@@ -21,13 +21,18 @@
   /* Свойство align-items задает выравнивание элементов 
     вдоль поперечной оси. Применяется к родительскому элементу 
     для flex блоков. */
+  font-size: 1.2rem;
+  /* To recap, the rem unit means "The root element's font-size" (rem stands for 
+  "root em"). The <li> elements inside the <ul> with a class of rems take their 
+  sizing from the root element ( <html> ). This means that each successive level 
+  of nesting does not keep getting larger. */
   position: sticky;
   /* CSS position: sticky — создание эффектов пролистывания с использованием липкого позиционирования От автора: липкие элементы преимущественно используются 
     для удерживания чего-либо, отображаемого на экране 
     во время прокрутки. */
   top: 0;
   z-index: 999;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   /* CSS-свойство z-index определяет положение позиционированного 
     элемента и его дочерних элементов или флекс-элементов по оси z. 
     Перекрывающие элементы с большим значением z-index будут 
@@ -42,89 +47,206 @@
   but puts elements lefts and rights */
   height: 80px;
   z-index: 1;
-  width: 100%; 
+  width: 100%;
   /* :)) this feature made logo standing left, but other - right*/
   max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 50px;
+  margin: 0 0 0 0;
+  padding: 0 0px 0px 50px;
 }
 
-
-#navbarLogo{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844, #ffb199,
-    #ffb199 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    /* These are the vendor-prefixed properties offered by the relevant rendering engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Internet Explorer). Typically they're used to implement new, or 
+#navbarLogo {
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844, #ffb199, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  /* These are the vendor-prefixed properties offered by the relevant rendering engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Internet Explorer). Typically they're used to implement new, or 
     proprietary CSS features, prior to final clarification/definition 
     by the W3. */
-    display: flex;
-    align-items: center;
-    /* makes elements being in the center fo parent element */
-    /* and it would not work without the line above */
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
+  display: flex;
+  align-items: center;
+  /* makes elements being in the center fo parent element */
+  /* and it would not work without the line above */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
 }
 
-
-
-.navbarMenu{
+.navbarMenu {
   display: flex;
   /* this function made a row from column(list) of elements*/
   align-items: center;
   list-style: none;
-
+  /* margin: 0 15% 0 0; */
+  /* justify-content: center; */
 }
 
-.navbarItem{
+.navbarItem {
   height: 80px;
-  
 }
 
+.navbarLinks {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+  width: 125px;
+  /* margin: 0 10% 0 0; */
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
 
+/* #servicesPage{ */
+/* margin: 0 50px 0 0px; */
+/* } */
 
+#signUp {
+  /* color: purple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  /* height: 40px; */
+  /* margin: 10px 0px 10px 0px; */
+  /* position: sticky;       */
+  /* DO NOT FORGET TO MAKE TRANSITION FOR SIGN UP BUTTON */
+}
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  /* outline property makes an additional border for an element */
+  border-radius: 4px;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: #fff;
+  transition: all 0.3s ease;
+  /* Свойство CSS transition - это сокращённое свойство для transition-
+  property (en-US), transition-d
+  uration, transition-timing-function (en-US), и transition-delay (en-US). */
+  /* 22:17 */
+  /* background: #ee0979;  fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #ff6a00, #ee0979); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+/* this is an animation of links when touching them with the cursor */
+.navbarLinks:hover {
+  color: #833ab4;
+  transition: all 0.3s ease;
+}
 
+@media screen and (max-width: 960px) {
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
 
+  .navbarMenu {
+    display: grid;
+    grid-template-columns: auto;
+    /* The grid-template-columns property specifies
+    the number (and the widths) of columns in a grid layout. */
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: -1000;
+    opacity: 1;
+    /* CSS-свойство opacity устанавливает непрозрачность элемента*/
+    transition: all 0.5s ease;
+    /* Transition позволяет определять переходное состояние между двумя состояниями
+     элемента. Различные состояния могут быть определены с помощью 
+    псевдоклассов , таких как :hover или :active или установлены динамически с 
+    помощью JavaScript. */
+    z-index: -1;
+  }
 
+  .navbarMenu:active {
+    /*.ctive is a state of element*/
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5 ease;
+    z-index: 99;
+    height: 60vh;
+    /* Размер указывается в процентах от высоты вьюпорта (viewport height). 
+    100vh соответствует полной высоте вьюпорта. */
+    font-size: 1.6rem;
+  }
 
+  #navbarLogo {
+    padding-left: 25px;
+  }
 
+  .navbarToggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    /*  */
+    background: #fff;
+  }
 
+  .navbarItem {
+    width: 100%;
+  }
 
+  .navbarLinks {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    /*  */
+  }
 
+  #signUp {
+    padding-bottom: 2rem;
+  }
 
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80px;
+    margin: 0;
+  }
 
+  #mobile-menu {
+    position: absolute;
+    right: 5px;
+    top: 20%;
+    transform: translate(5%, 20%);
+  }
+  .navbarToggle .bar {
+    display: block;
+    cursor: pointer;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #mobile-menu.is-active .bar:nth-child(2) {
+    /* 33:00 */
+  }
+}
+/* CHANGE HTML!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11CHANGE HTML!!!!!!!!!!!!!11111111 */
