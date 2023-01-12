@@ -65,3 +65,77 @@ CSS свойство flex-basis задаёт базовый размер
   /*  */
   /* 5:58 */
 }
+
+#circle{
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+
+.feature img{
+   width: 70px;
+}
+
+.feature /*img*/{
+   position: absolute;
+}
+
+
+.one{
+  /*margin-*/top: 450px;
+  /*margin-*/right: 50px;
+}
+
+.two{
+  top: 150px;
+  left: 350px;
+}
+
+.three{
+  bottom: 450px;
+  left: 50px;
+}
+
+.four{
+  bottom: 150px;
+  right:350px;
+  /* 9:28 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
