@@ -60,7 +60,7 @@ CSS свойство flex-basis задаёт базовый размер
   height: 1000px;
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: 0;
   transform: translateY(-50%);
   /*  */
   /* 5:58 */
@@ -73,7 +73,9 @@ CSS свойство flex-basis задаёт базовый размер
   top: 0;
   left: 0;
   border-radius: 50%;
-  background: #ccc;
+  /* background: #ccc; */
+  /* 15^00 */
+  transform: rotate(0deg);
 }
 
 
@@ -83,8 +85,18 @@ CSS свойство flex-basis задаёт базовый размер
 
 .feature /*img*/{
    position: absolute;
+   display: flex;
+   color: #fff;
 }
 
+
+.feature div{
+  margin-left: 30px;
+}
+
+.feature div p{
+  margin-top: 8px;
+}
 
 .one{
   /*margin-*/top: 450px;
@@ -106,6 +118,123 @@ CSS свойство flex-basis задаёт базовый размер
   right:350px;
   /* 9:28 */
 }
+
+
+.mobile{
+  width: 200px;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%);
+  /*  */
+  z-index: 1;
+}
+
+.controls{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  /*transform function moves an object. translate moves one by x and y  */
+  /* rotate(0.5turn); turns an obj */
+  /*  */
+  /*  */
+  /*  */
+}
+
+
+
+.controls h3{
+  margin: 15px 0;
+  color: #fff;
+  text-align: center;
+
+}
+
+#upBtn{
+  width: 15px;
+  cursor: pointer;
+}
+
+#downBtn{
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(3.142rad);
+  /* /* rotate(0.5turn); turns an obj */ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
