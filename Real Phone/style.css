@@ -57,6 +57,13 @@ CSS свойство flex-basis задаёт базовый размер
 .nav-links ul li a {
   color: #fff;
   text-decoration: none;
+  margin: 15px;
+}
+
+.nav-links:hover ul:hover li:hover a:hover{
+  color: black;
+  text-decoration: none;
+  margin: 15px;
 }
 
 .information {
@@ -189,6 +196,11 @@ CSS свойство flex-basis задаёт базовый размер
 
 }
 
+/* click = (deg) => {
+  rotateSum = rotateValue + `rotate($deg)`;
+  circle.style.transform = rotateSum;
+  rotateValue = rotateSum;
+}; */
 
 
 

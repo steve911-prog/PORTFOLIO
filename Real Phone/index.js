@@ -1,5 +1,3 @@
-console.log(5);
-
 const circle = document.getElementById("circle");
 let upBtn = document.getElementById("upBtn");
 let downBtn = document.getElementById("downBtn");
@@ -19,6 +17,17 @@ window.onload = function () {
     rotateValue = rotateSum;
   };
 };
+
+//DON"T FORGT ABOUT ADAPtIVE LAYOUT AND KEYPRESS EVENT
+
+// let upBttn = document.getElementById("upBtn");
+
+// upBttn.addEventListener("keydown", function (event) {
+//   console.log("work");
+//   if (event.key === "Enter") {
+//     console.log("I WORK");
+//   }
+// });
 
 // console.log(typeof upBtn.onclick)
 
