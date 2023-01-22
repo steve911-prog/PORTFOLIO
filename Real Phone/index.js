@@ -1,22 +1,28 @@
 console.log(5);
 
-const circle = document.getElementById("#circle");
-const upBtn = document.getElementById("#upBtn");
-const downBtn = document.getElementById("#downBtn");
+const circle = document.getElementById("circle");
+let upBtn = document.getElementById("upBtn");
+let downBtn = document.getElementById("downBtn");
 
-// const rotateValue = circle.style.transform;
-const rotateSum = 0;
+let rotateValue = circle.style.transform;
+let rotateSum = 0;
 
 window.onload = function () {
   upBtn.onclick = function () {
-    console.log("555555555555");
-       rotateSum = rotateValue + "rotate(-90deg)";
-       circle.style.transform = rotateSum;
-       rotateValue = rotateSum;
+    rotateSum = rotateValue + "rotate(-90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
+  };
+  downBtn.onclick = function () {
+    rotateSum = rotateValue + "rotate(90deg)";
+    circle.style.transform = rotateSum;
+    rotateValue = rotateSum;
   };
 };
 
-// 16:40
+// console.log(typeof upBtn.onclick)
+
+// 17:20
 
 // window.addEventListener("load", function () {
 //   document
