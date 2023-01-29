@@ -3,17 +3,68 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-.container {
-  width: 100%;
-  height: 100vh;
+
+body{
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/background.png);
   background-position: center;
   background-size: cover;
+}
+
+
+/* For building a fixed layout site you should use:
+<meta name="viewport" content="width=600px">
+and 
+body{
+  min-width:600px;
+} */
+
+
+.container {
+  /* margin-left: 00px; */
+  width: 100%;
+  height: 100vh;
+  
   padding: 0 8% 0 8%;
   box-sizing: border-box;
   /* It would make the child stay in the parent container */
 }
+
+@media (max-width:1350px) {
+  /* .container{
+    max-width: 970px;
+  } */
+  
+  /* .card .card1 {
+    max-width: 200;
+    max-height: 210;
+  } */
+ }
+
+
+
+ @media (max-width:1200px) {
+  .container{
+    max-width: 830px;
+    margin-left: 10%;
+    
+  }
+  
+ }
+
+@media (max-width:992px) {
+  .container{
+    max-width: 750px;
+  }
+}
+
+@media (max-width:767px) {
+  .container{
+    max-width: none;
+  }
+
+
+}  */
 
 .navbar {
   height: 12;
@@ -41,8 +92,10 @@ nav table tr th {
   list-style: none;
   /*  */
   display: inline-flexbox;
-  margin-left: 60px;
+  margin-left: 20%;
 }
+
+
 
 nav table tr th a {
   text-decoration: none;
@@ -58,13 +111,15 @@ nav table tr th a {
 }
 
 .row {
-  display: flex;
+  column-width: 40%;
   height: 88%;
   align-items: center;
 }
 
 .col {
-  flex-basis: 50%;
+  columns-width: 200px;
+
+  /* flex-basis: 50%; */
   /*CSS свойство flex-basis задаёт базовый размер флекс 
   элемента по основной оси. Это свойство определяет размер контент-бокса, если не задано 
   иначе через box-sizing.*/
@@ -79,7 +134,17 @@ p {
   color: #fff;
   font-size: 11px;
   line-height: 15px;
+
+  
 }
+
+/* @media (max-width:100px){
+  p{
+    text-align: center;
+    max-width: 200px;
+  }
+
+} */
 
 button{
   width: 180px;
@@ -133,6 +198,22 @@ button{
 .card4{
   background-image: url(img/pic-4.png);
 }
+
+ /* @media (max-width:1200px) {
+  .card1 .card2 .card3 .card4{
+    
+  }
+}
+
+@media (max-width:992px) {
+ 
+}
+
+@media (max-width:767px) {
+  
+
+
+}  */
 
 
 h5{
