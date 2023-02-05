@@ -24,10 +24,13 @@ body{
   /* margin-left: 00px; */
   width: 100%;
   height: 100vh;
+  /* text-align: center; */
   
-  padding: 0 8% 0 8%;
   box-sizing: border-box;
-  /* It would make the child stay in the parent container */
+/* It would make the child stay in the parent container */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: flex-start; */
 }
 
 @media (max-width:1350px) {
@@ -43,12 +46,12 @@ body{
 
 
 
- @media (max-width:1200px) {
+ /* @media (max-width:1200px) {
   .container{
     max-width: 830px;
     margin-left: 10%;
     
-  }
+  } 
   
  }
 
@@ -66,15 +69,67 @@ body{
 
 }  */
 
-.navbar {
-  height: 12;
+/* .navbar {
+  height: 70px;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: row; */
+  /* align-items: center; */
+/* } */
+
+/* nav{ */
+  /* flex-direction: row-reverse; */
+/* } */ 
+
+nav{
+  width: 100%;
+  /* position: sticky; */
+  padding: 10px 0px ;
+  z-index: 1;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgb(112, 34, 6);
+  /* box-sizing: content-box; */
+
+}
+
+.logo img{
+  width: 60px;
+  /* margin-right: 85%; */
+}
+
+@media (min-height:1000px){
+  .logo img{
+  /* width: 60px; */
+  /* margin-right: 40%; */
+}
+.nav-links ul li {
+  /* margin-left: 45%; */
+}
+}
+
+
+
+.nav-links ul li {
+  margin-top: 15px;
+  margin-left: 15%;
+  /* width: 75%; */
+  display: inline-flex;
+  /* позволяет элементу flex расширяться и заполнять доступное пространство */
+  /* text-align: right; */
+  /* flex-direction: row-reverse; */
+  /* justify-content: space-around; */
+}
+
+.nav-links ul li a .navElem{
+    
 }
 
 .logo {
-  margin-top: 15px;
-  width: 50px;
+  margin-top: 5px;
+
+  /* width: 0px; */
   cursor: pointer;
 }
 .menu-icon {
@@ -97,12 +152,13 @@ nav table tr th {
 
 
 
-nav table tr th a {
+.nav-links ul li a {
   text-decoration: none;
   color: #fff;
   font-size: 13px;
-  margin-left: 50px;
-  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 /* DONOT FORGET ABOUT SPACE NAV */
@@ -114,10 +170,11 @@ nav table tr th a {
   column-width: 40%;
   height: 88%;
   align-items: center;
+  padding: 0 8% 0 8%;
 }
 
 .col {
-  columns-width: 200px;
+  column-width: 20%;
 
   /* flex-basis: 50%; */
   /*CSS свойство flex-basis задаёт базовый размер флекс 
@@ -128,12 +185,15 @@ nav table tr th a {
 h1 {
   color: #fff;
   font-size: 100px;
-}
+  margin-top: 3vh;
+  }
 
 p {
   color: #fff;
   font-size: 11px;
   line-height: 15px;
+  max-width: 900px;
+  margin-bottom: 20px;
 
   
 }
@@ -152,7 +212,7 @@ button{
   font-size: 12px 0;
   background: #fff;
   border: 0;
-  margin-top: 20px;
+  margin: 20px 0 25px 0;
   padding: 10px 5px 10px 5px;
   border-radius: 20px;
    outline: none; /*kontur of border */
