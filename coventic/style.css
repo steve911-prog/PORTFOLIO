@@ -1,0 +1,28 @@
+body{
+    background-image: url("img/background.png");
+    background-size: 100%;
+}
+
+#container{
+    margin-left: 1%;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav{
+    /* background-image: url(img/menu.png); */
+    width: 5%;
+    height: 100vh;
+    background-color: #e8e8e9;
+}
+
+#map{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
