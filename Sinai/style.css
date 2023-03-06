@@ -11,15 +11,24 @@ body {
   background-color:  #F0A04B;
   /* color: white; */
   font-size: 18px;
-  /* width: 100vw; */
+  /* box-sizing: content-box; */
+  /* overflow-x: hidden; */
+  width: 100%;
+  border: solid;
 }
 
 video{
   position: absolute;
   width: 100vw;
+  flex-shrink: 1;
+  flex-grow: 1;
   top: 0;
   z-index: -10;
 }
+
+
+
+
 
 .container {
   /* z-index: -10; */
@@ -27,7 +36,7 @@ video{
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  margin: 9.675% 16% 0 16%;
+  margin: 9.675%  16% 0 16%;
   box-sizing: content-box;
   /* width: 100%; */
   /* height: 100vh; */
@@ -40,7 +49,7 @@ video{
   /* justify-content: center; */
   align-items: center;
   flex-flow: column wrap;
-  width: 100vw;
+  width: 100%;
   height: 95vh;
   /* background-image: url(img/seif-amr-UGX0M-c0jww-unsplash\ \(1\).jpg); */
   /* border: 2.5px black solid; */
@@ -48,42 +57,126 @@ video{
   /* background-color: #183A1D; */
   background-image: url("img/ocean/biggest.mp4");
   left: 0;
+  right: 0;
 }
 
 .nav .middle_bar{
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 8%; */
+  /* margin-left: 3%; */
+}
+
+.middle_bar__sights {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
+  /* height: 120%; */
+  /* padding: 2% 0 4% 0; */
+  width: 17%;
+  /* border: 2.5px solid white;
+  border-bottom: #000 2.5px solid;
+  border-left: #000 2.5px solid; */
 }
+
+.middle_bar__sights button{
+  /* height: 100%; */
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Dancing Script";
+  /* border: 1.5px solid; */
+  /* border-left: none;
+  border-bottom: none; */
+  border: none;
+  font-size: 15px;
+  padding: 82% 20%;
+  /* border: 2.5px solid white;
+  border-top: #000 2.0px solid;
+  border-right: #000 2.0px solid; */
+}
+
+.middle_bar__sights button:hover, .middle_bar__tours button:hover{
+  /* background-color: #000; */
+  /* opacity: 0.95; */
+  flex-basis: 100%;
+  color: #000;
+  font-size: 15.19px;
+}
+
+
+
+.middle_bar__tours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  /* height: 120%; */
+  /* height: 100%; */
+  width: 17%;
+  
+  /* border: 2.5px solid white;
+  border-bottom: #000 2.5px solid;
+  border-left: #000 2.5px solid; */
+  
+
+  margin-right: 3%;
+}
+
+.middle_bar__tours button{
+  /* height: 100%; */
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Dancing Script";
+  /* font-size: 28px; */
+  border: none;
+  /* border-left: none;
+  border-bottom: none; */
+  font-size: 15px;
+  padding: 82% 20%;
+  /* border: 2.5px solid white;
+  border-top: #000 2.0px solid;
+  border-right: #000 2.0px solid; */
+}
+
 
 .nav .middle_bar .heading{
   width: 50%;
-  /* height: 90vh; */
+  height: 100%;
   display: flex;
   flex-flow: column ;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   /* margin-top: 30%; */
-  margin-left: 7%;
-  padding: 0;
+  /* margin-left: 7.2%; */
+  padding-right: -10%;
+  /* border: 2.5px solid white;
+  border-bottom: #000 2.5px solid;
+  border-left: #000 2.5px solid; */
   font-size: 20px;
   font-style: bold;
   color: aliceblue;
   margin-bottom: 0;
-  margin-top: 2%;
+  margin-top: 0%;
   box-sizing: content-box;
 }
 
 
 .heading__head{
-  width: 82%;
+  width: 83%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .heading__head h1{
-  font-size: 2.5em;
+  font-size: 2.9em;
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
 }
 
 
@@ -97,38 +190,44 @@ video{
 .heading__button{
   background-color: transparent;
   /* background-color: rgba(0, 0, 0, 0.5); */
-  background-color: #fff;
+  
   /* opacity: 0.62; */
   font-family: "Gloock";
+  /* font-size: 18px; */
   /* text-align: center; */
   border-radius: 45px;
-  padding: 15px 61px;
-  margin: 6% 0 0 0;
-  color: black;
-  border: white 1.5px solid;
+  padding: 16px 31px;
+  margin: 7% 0 0 0;
+  background-color: black;
+  color: aliceblue;
+  border: aliceblue 1.7px solid;
   /* bottom: none; */
-  font-size: 1em;
-  margin: 1% 0 0 0;
+  font-size: 22px;
+  margin: 5% 0 4% 0;
   
   
 }
 
 .heading__button:hover{
-  background-color: black;
-  color: aliceblue;
+  
+  color: black;
+  border: black 1.7px solid;
+  background-color: #fff;
 }
 
 .heading__text{
-  width: 84%;
+  /* position: absoe; */
+  width: 100%;
+  margin-left: 3%;
   size: 20px;
   color: aliceblue;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .search {
   display: flex;
   justify-content: space-between;
-  margin: 5% 14% 0 0;
+  margin: 6% 0 9% 0;
   border-bottom: 1.8px solid black;
   width: 80%;
 }
@@ -140,7 +239,7 @@ video{
   border: none;
   outline: none;
   font-size: 1em;
-  /* width: 200%; */
+  width: 100%;
   
 }
 
@@ -163,14 +262,16 @@ video{
 .nav .map{
   width: 100vw;
   /* position: fixed; */
-  margin: 0 0 5% 0 ;
+  margin: 0 0 9% 0 ;
   padding-top: 1%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   background-color:rgba(0, 0, 0, 0.5);
   /* background-color: black; */
   /* opacity: 0.62; */
 }
+
+
 
 .nav .map .links{
   display: flex;
@@ -180,6 +281,8 @@ video{
   align-items: center;
   margin: 0 0 0 16%;
 }
+
+
 
 .nav .map .link{
   color: aliceblue;
