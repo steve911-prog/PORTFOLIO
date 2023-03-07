@@ -12,7 +12,7 @@ body {
   /* color: white; */
   font-size: 18px;
   /* box-sizing: content-box; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   width: 100%;
   border: solid;
 }
@@ -56,13 +56,14 @@ video{
   /* border-spacing: 200%; */
   /* background-color: #183A1D; */
   background-image: url("img/ocean/biggest.mp4");
-  left: 0;
-  right: 0;
+  /* left: 0;
+  right: 0;*/
 }
 
 .nav .middle_bar{
   top: 0;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   /* width: 8%; */
@@ -445,3 +446,22 @@ video{
         font-size: 3.2em;
     }
 } */
+
+
+/* JUST FOR WORKING */
+  .nav .map {
+    margin: 0;
+    
+  }
+  .nav .map .links{
+    margin: 0 0 0 7%;
+  }
+
+
+  .heading__text{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding: 0;
+    
+  }
