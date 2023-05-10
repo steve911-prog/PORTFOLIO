@@ -34,21 +34,18 @@ video{
 }
 
 
-
-
-
-.container {
+/* .container {
   /* z-index: -10; */
-  background-color: #FEFBE9;
+  /* background-color: #FEFBE9;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   margin: 9.675%  16% 0 16%;
-  box-sizing: content-box;
+  box-sizing: content-box; */
   /* width: 100%; */
   /* height: 100vh; */
   /* padding: 0 15%; */
-}
+
 
 .nav {
   box-sizing: border-box;
@@ -382,11 +379,6 @@ video{
 
 
 
-
-
-
-
-
 /* add */
 /* links' */
 /* animation */
@@ -394,114 +386,14 @@ video{
 
 
 
-
-
-
-
-
-
-
-
-
-
-#black {
+/* #black {
   color: black;
 }
 
 .content__intro {
   min-width: 8%;
   margin: 2% 0 0 0;
-}
-
-.content {
-  /* width: 99.39%; */
-  /* height: 100vh; */
-  /* border: black 1.48px solid; */
-  /* border-style: dashed; */
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.content_sights {
-  /* box-sizing: content-box; */
-  /* width: 100%; */
-  list-style: none;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-flow: row nowrap;
-  margin: 0 5.1% 0 0;
-  left: -1%;
-}
-
-/* @media only screen and (max-height:500px){
-  .content_sights {
-  /* box-sizing: content-box; */
-  /* width: 100%; */
-  /* list-style: none; */
-  /* display: flex;
-  flex-flow: column wrap;
-  align-items: normal;
-  } */
-/* } */
-
-.image {
-  box-sizing: content-box;
-  margin: 10% 1% 4% 1%;
-  max-width: 28.5%;
-  /* border: 2px black solid; */
-  border-radius: 1.89%;
-}
-
-.image p {
-  padding: 0 1.5%;
-  size: relative;
-
-}
-
-/* .image .redsea{
-  background-image: url(img/readsea.jpg);
-  background-size: cover;
-  width: 400px;
-  height: 150px;
-}
-
-.image .mountain_sight{
-  background-image: url(img/mountain_sight.jpg);
-}
-
-.image .biking{
-  background-image: url(img/biking.jpg);
 } */
-
-.image_sights {
-  max-width: 100%;
-  /* max-height: 100px; */
-  box-sizing: content-box;
-  flex-grow: 1;
-}
-
-.content__nature {
-  list-style: none;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  box-sizing: content-box;
-  width: 90%;
-  height: auto;
-  margin: 1% 8% 8% 0;
-}
-
-.content__nature li {
-  /* list-style: none; */
-}
-
-.big_img {
-  /* flex-shrink: 1; */
-  max-width: 100%;
-  margin: 0 0 1% 0;
-}
 
 
 
